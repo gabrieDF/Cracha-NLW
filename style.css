@@ -79,6 +79,18 @@ p {
   
 }
 
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 ul{
   margin-top: 4rem;
   list-style: none;
@@ -87,5 +99,9 @@ ul{
   gap: 0.5rem;
 
   justify-content: center;
+  
+  animation-duration: 2.5s;
+  animation-name: slidein;
+  
 }
 
